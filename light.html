@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lighting options</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style>
+		.light {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			display: inline-block;
+			margin-right: 10px;
+		}
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+    }
+   
+   
+	</style>
+</head>
+<div class="container-fluid">
+  <nav class="navbar fixed-top navbar-dark bg-primary" style="background-color: #e3f2fd;">
+    <h1 style="color:rgb(203, 216, 58)">LIGHTS(TOPIC 2)</h1>
+  </nav>
+    
+  </div>
+<body style="background-color:rgb(127, 222, 244)">
+	<h1>SDS</h1>
+  <p></p>
+	<div>
+    <h1 style="text-align:center">OPTIONS</h1>
+		<h2 style="color:rgb(87, 149, 149)">Select Light:</h2>
+		<select id="light-select">
+			<option value="light-1">Light 1</option>
+			<option value="light-2">Light 2</option>
+			<option value="light-3">Light 3</option>
+		</select>
+	</div>
+  <h2 style="color:rgb(114, 131, 5)">Choose the Color:</h2>
+	<div class="form-floating mb-3">
+		<input type="color" id="color-picker" value="#ffffff">
+    
+	</div>
+	<div>
+		<button type="button" class="btn btn-danger" onclick="changeColor()">Apply Color</button>
+	</div>
+	<div>
+		<h2 style="color:rgb(178, 130, 218)">Avaliable Lights:</h2>
+    <strong style="color:rgb(125, 132, 207)">LIGHT1</strong>
+		<div class="light" id="light-1"></div>
+    <strong style="color:rgb(125, 132, 207)">LIGHT2</strong>
+		<div class="light" id="light-2"></div>
+    <strong style="color:rgb(125, 132, 207)">LIGHT3</strong>
+		<div class="light" id="light-3"></div>
+	</div>
+  <script src="light.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+</body>
+<footer class="bg-primary text-center text-lg-start footer">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    ©Armaan Chetal
+</footer>
+</html>
